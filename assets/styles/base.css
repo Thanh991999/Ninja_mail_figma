@@ -1,0 +1,50 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #000;
+    --green-color: #4BA87D;
+}
+
+* {
+    box-sizing: inherit;
+    
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+ul {
+    padding-left: 0;
+    
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.df {
+    display: flex;
+}
+
+.btn {
+    font-size: 2.1rem;
+    letter-spacing: 0.105rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
