@@ -345,29 +345,12 @@
         padding-bottom: 5px;
     }
 
-    .backgroud-ele {
-        max-width: 100%;
-        top: 169px;
-        transform: scale(1.2);
-    }
-
-    .backgroud-gray {
-        top: calc(414px + 65px);
-    }
-
-    .backgroud-slash-back {
-        top: calc(268px + 65px);
-        left: -65px;
-    }
-
-    .backgroud-green {
-        top: calc(709px + 65px);
-        height: 826px;
-    }
+    .backgroud-ele,
+    .backgroud-gray,
+    .backgroud-slash-back,
+    .backgroud-green ,
     .backgroud-slash-white {
-        
-        right: -308px;
-        top: calc(65px + 802px);
+        display: none;
         
     }
 }
@@ -636,4 +619,3 @@
     }
     
 }
-

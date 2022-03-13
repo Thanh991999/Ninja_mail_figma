@@ -471,6 +471,10 @@
         width: 984px;
     }
 
+    .wide1 {
+        width: 964px;
+    }
+
     .wide .row {
         margin-left: -23px;
         margin-right: -23px;
