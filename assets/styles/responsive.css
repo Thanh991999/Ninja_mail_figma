@@ -24,11 +24,6 @@
 /* mobile */
 
 @media (max-width:739px) {
-    .wide-wrap {
-        max-width: 320px;
-        margin: 0 auto;
-
-    }
 
     .wide1 {
         max-width: 300px;
@@ -345,13 +340,73 @@
         padding-bottom: 5px;
     }
 
-    .backgroud-ele,
-    .backgroud-gray,
-    .backgroud-slash-back,
-    .backgroud-green ,
-    .backgroud-slash-white {
+
+    .sources::after {
+        content: "";
+        position: absolute;
+        top: 29px;
+        left: 0;
+        background-color: #caeac7;
+        width: 148%;
+        height: 149%;
+        z-index: -1;
+        transform: rotate(69deg) translateX(-123px);
+    }
+
+    .customers::before {
+        content: "";
+        position: absolute;
+        top: -91px;
+        left: 27px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: url('../image/mobile-img/slash_black.png') no-repeat;
+    }
+
+    .customers::after {
+        content: "";
+        position: absolute;
+        top: -22px;
+        left: 0;
+        background-color: #F7F7F7;
+        width: 100%;
+        height: 284%;
+        z-index: -2;
+    }
+    .container::after {   
         display: none;
-        
+    }
+
+    .sources::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url('../image/mobile-img/floating_elements\ .png') no-repeat;
+        z-index: 0;
+        bottom: -418px;
+        left: 0;
+    }   
+
+    .plas-mb {
+        position: relative;
+    }
+
+    .plas-mb::after {
+        position: absolute;
+        content: "";
+        width: 200%;
+        height: 400%;
+        background: url(../image/mobile-img/slash_white.png) no-repeat;
+        z-index: -1;
+        bottom: -277px;
+        left: -10px;
+    }
+
+    .grid.wide {
+        max-width: calc(320px);
+        margin: 0 auto;
     }
 }
 
@@ -367,6 +422,17 @@
     .wide1 {
         max-width: 710px;
         margin: 0 auto;
+    }
+
+    .container::after {   
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url('../image/tablet-img/floating_elements.png') no-repeat;
+        z-index: 1;
+        top: 22px;
+        left: 8px;
     }
 
     .header-menu__list {
@@ -433,6 +499,28 @@
         margin-top: 182px;
     }
 
+    .customers::after {
+        content: "";
+        position: absolute;
+        top: -90px;
+        left: 0;
+        background-color: #F7F7F7;
+        width: 100%;
+        height: 134%;
+        z-index: -2;
+    }
+
+    .customers::before {
+        content: "";
+        position: absolute;
+        top: -170px;
+        left: 0;
+        width: 100%;
+        height: 134%;
+        z-index: -1;
+        background: url('../image/tablet-img/slash_black.png') no-repeat;
+    }
+
     .customers-img img {
         width: 616px;
     }
@@ -454,6 +542,21 @@
     .sources {
         margin-top: 55px;
     }
+
+    .sources::after {
+        top: -159px;
+    }
+
+    .sources::before {
+        content: "";
+        position: absolute;
+        bottom: -129px;
+        right: -337px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: url('../image/tablet-img/slash_white.png') no-repeat;
+    }   
 
     .sources-descript p {
         font-size: 1.2rem;
@@ -591,31 +694,6 @@
 
     .hero-wrap {
         padding-top: 67px;
-    }
-
-    .backgroud-ele {
-        max-width: 100%;
-        top: 169px;
-        transform: scale(1.2);
-    }
-
-    .backgroud-gray {
-        top: calc(414px + 65px);
-    }
-
-    .backgroud-slash-back {
-        top: calc(268px + 65px);
-        left: -65px;
-    }
-
-    .backgroud-green {
-        top: calc(743px + 65px);
-    }
-    .backgroud-slash-white {
-        
-        right: -308px;
-        top: calc(65px + 802px);
-        
     }
     
 }
