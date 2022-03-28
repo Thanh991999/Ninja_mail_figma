@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .header-menu {
@@ -31,7 +32,7 @@
 }
 
 .header-menu__list {
-    margin: 0 19px;
+    margin: 0 10px;
     position: relative;
 }
 
@@ -43,7 +44,7 @@
     width: 0%;
     height: 5px;
     background-color: var(--green-color);
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 .header-menu__list:hover::after{
@@ -55,6 +56,7 @@
     line-height: 2rem;
     font-weight: 800;
     color: var(--text-color);
+    padding: 5px;
 }
 
 .header-menu__btn {
@@ -85,12 +87,12 @@
     background-color: #f1ecec;
     color: #37be7f;
 }
-.member-img {
+.member-img img{
     transition: all 0.6s ease;
-
-
+    display: block;
 }
-.member-img:hover {
+
+.member-img:hover>img {
     transform: scale(105%);
 }
 
@@ -366,20 +368,21 @@
 }
 
 .member-img {
-    padding: 152px 50px 17px 27px;
     position: relative;
-    background-size: cover;
-    max-height: 239px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .member-name {
     font-weight: 900;
     font-size: 3.4rem;
     line-height: 4rem;
-    padding-bottom: 7px;
     color: var(--white-color);
+    bottom: 54px;
+    left: 27px;
+    position: absolute;
     z-index: 2;
-    position: relative;
+
 }
 
 .member-date {
@@ -387,8 +390,10 @@
     font-size: 1.9rem;
     line-height: 2.2rem;
     color: var(--white-color);
-    position: relative;
+    position: absolute;
     z-index: 2;
+    bottom: 20px;
+    left: 27px;
 }
 
 .member-img::after {
